@@ -38,6 +38,10 @@ function populatehtml(operation){
 	var output = operation(input1, input2);
 		document.getElementById('result').innerText += output;
 
+		if (input1 == null || input1 == "" || input2 == null || input2 == ""){
+		alert("Please Enter Two Numbers!");
+		return false;
+			}
 
 }
 
